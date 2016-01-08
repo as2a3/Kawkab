@@ -10,12 +10,11 @@ import android.widget.ListView;
 import com.eshraq.kawkab.R;
 import com.eshraq.kawkab.adapter.PoemAdapter;
 import com.eshraq.kawkab.model.Poem;
-import com.eshraq.kawkab.model.Settings;
 import com.eshraq.kawkab.service.CommonService;
 
 import java.util.List;
 
-public class AliFragment extends Fragment {
+public class NasemaFragment extends Fragment {
 
     private CommonService commonService = new CommonService(getActivity());
     private List<Poem> poems;
@@ -23,8 +22,7 @@ public class AliFragment extends Fragment {
 
     private ListView listView;
 
-
-    public AliFragment() {
+    public NasemaFragment() {
         // Required empty public constructor
     }
 
@@ -37,7 +35,7 @@ public class AliFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        poems = commonService.getUserPoems(1);
+        poems = commonService.getUserPoems(2);
 
 
         View view = inflater.inflate(R.layout.fragment_poem, container, false);

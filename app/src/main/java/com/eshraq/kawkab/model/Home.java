@@ -18,6 +18,9 @@ public class Home {
     @DatabaseField(columnName = "description_sp")
     private String descriptionSp;
 
+    @DatabaseField(columnName = "separator")
+    private String separator;
+
     @DatabaseField(foreign = true, foreignAutoRefresh = true, columnName = "poem_id")
     private Poem poem;
 
@@ -53,5 +56,13 @@ public class Home {
 
     public void setPoem(Poem poem) {
         this.poem = poem;
+    }
+
+    public String getSeparator() {
+        return separator;
+    }
+
+    public void setSeparator(String separator) {
+        this.separator = separator;
     }
 }

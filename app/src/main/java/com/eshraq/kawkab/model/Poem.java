@@ -16,7 +16,7 @@ public class Poem {
     private String titleAr;
 
     @DatabaseField(columnName = "title_sp")
-    private String title_sp;
+    private String titleSp;
 
     @DatabaseField(foreign = true, foreignAutoRefresh = true, columnName = "author_user_id")
     private User author;
@@ -40,12 +40,12 @@ public class Poem {
         this.titleAr = titleAr;
     }
 
-    public String getTitle_sp() {
-        return title_sp;
+    public String getTitleSp() {
+        return titleSp;
     }
 
-    public void setTitle_sp(String title_sp) {
-        this.title_sp = title_sp;
+    public void setTitleSp(String titleSp) {
+        this.titleSp = titleSp;
     }
 
     public User getAuthor() {

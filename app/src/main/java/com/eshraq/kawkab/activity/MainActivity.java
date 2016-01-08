@@ -11,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.eshraq.kawkab.R;
 import com.eshraq.kawkab.fragment.AliFragment;
 import com.eshraq.kawkab.fragment.ThreeFragment;
-import com.eshraq.kawkab.fragment.TwoFragment;
+import com.eshraq.kawkab.fragment.NasemaFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new AliFragment());
-        adapter.addFrag(new TwoFragment());
+        adapter.addFrag(new NasemaFragment());
         adapter.addFrag(new ThreeFragment());
         viewPager.setAdapter(adapter);
     }

@@ -7,6 +7,7 @@ import com.eshraq.kawkab.KawkabApp;
 import com.eshraq.kawkab.database.DatabaseHelper;
 import com.eshraq.kawkab.model.Home;
 import com.eshraq.kawkab.model.Poem;
+import com.eshraq.kawkab.model.Settings;
 import com.eshraq.kawkab.model.User;
 import com.j256.ormlite.dao.Dao;
 
@@ -18,12 +19,14 @@ import java.util.List;
  * Created by Ahmed on 1/8/2016.
  */
 public class CommonService {
+    private Dao<Settings, Integer> settingsDao;
     public Dao<Home, Integer> homeDao;
     public Dao<Poem, Integer> poemDao;
     public Dao<User, Integer> userDao;
 
 
     public CommonService(Context context) {
+        settingsDao = DatabaseHelper.getHelper(context).getSettingsDao();
         homeDao = DatabaseHelper.getHelper(context).getHomeDao();
         poemDao = DatabaseHelper.getHelper(context).getPoemDao();
         userDao = DatabaseHelper.getHelper(context).getUserDao();
@@ -31,6 +34,15 @@ public class CommonService {
 
 
     /////////////////////////////// Database /////////////////////////////////////
+
+    public Settings getSettings() {
+        try {
+            return settingsDao.queryForId(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
     /**
      * get user by given id

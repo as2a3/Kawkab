@@ -4,8 +4,20 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
 
+    <!-- Poem List-->
+    <dimen name="list_row_height">72dp</dimen>
+
+
+    <!-- Poem details Activity-->
+    <dimen name="title_text_view_height">72dp</dimen>
+
 
     <!-- comm -->
     <dimen name="comm_padding_small">4dp</dimen>
+    <dimen name="comm_padding_medium">8dp</dimen>
+
+    <dimen name="comm_title_size">18sp</dimen>
+    <dimen name="comm_text_size">14sp</dimen>
+
 
 </resources>
