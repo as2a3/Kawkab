@@ -7,10 +7,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageButton;
 
 import com.eshraq.kawkab.R;
 import com.eshraq.kawkab.fragment.AliFragment;
-import com.eshraq.kawkab.fragment.ThreeFragment;
+import com.eshraq.kawkab.fragment.SettingFragment;
 import com.eshraq.kawkab.fragment.NasemaFragment;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private ImageButton languageImageButton;
 
 
     @Override
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        languageImageButton = (ImageButton) findViewById(R.id.languageImageButton);
+
         setupTabIcons();
     }
 
@@ -51,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new AliFragment());
         adapter.addFrag(new NasemaFragment());
-        adapter.addFrag(new ThreeFragment());
+        adapter.addFrag(new SettingFragment());
         viewPager.setAdapter(adapter);
     }
 
