@@ -7,10 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.eshraq.kawkab.R;
+import com.eshraq.kawkab.service.CommonService;
 
-public class OneFragment extends Fragment {
+public class AliFragment extends Fragment {
 
-    public OneFragment() {
+    private CommonService commonService = new CommonService(getActivity());
+
+    public AliFragment() {
         // Required empty public constructor
     }
 
@@ -22,8 +25,9 @@ public class OneFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_one, container, false);
+        View view = inflater.inflate(R.layout.fragment_ali, container, false);
+
+        return view;
     }
 
 }
