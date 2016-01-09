@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupTabIcons() {
         int[] tabIcons = {
-                R.drawable.ic_tab_favourite,
-                R.drawable.ic_tab_call,
-                R.drawable.ic_tab_contacts
+                R.drawable.ali,
+                R.drawable.naseema,
+                R.drawable.ic_settings_black
         };
 
         tabLayout.getTabAt(0).setIcon(tabIcons[0]);
