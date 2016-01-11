@@ -1,15 +1,143 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.androidhive.materialtabs.fragments.ThreeFragment">
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/info_top_padding"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Three"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ali_title"
+        android:layout_margin="@dimen/comm_padding_medium"/>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/comm_padding_medium"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/aliFaceIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_face"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/aliYoutubeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_youtube"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/aliTwitterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_twitter"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/aliInstegramIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_instegram"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/aliLinkedIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_linked"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/naseema_title"
+        android:layout_margin="@dimen/comm_padding_medium"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/naseemaFaceIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_face"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/naseemaYoutubeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_youtube"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/naseemaTwitterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_twitter"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/naseemaInstegramIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_instegram"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+
+        <ImageView
+            android:id="@+id/naseemaLinkedIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_linked"
+            android:layout_marginRight="@dimen/comm_padding_small"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imagineit_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="@dimen/comm_padding_big"/>
+
+    <TextView
+        android:id="@+id/imagieitTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/imaginit_url"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/comm_padding_medium"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/todosnas_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="@dimen/comm_padding_big"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/imaginit_url"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/comm_padding_medium"/>
+
+</LinearLayout>

@@ -4,7 +4,7 @@
     <dimen name="activity_vertical_margin">20.8dp</dimen>
 
     <!-- Poem List-->
-    <dimen name="list_row_height">93.6dp</dimen>
+    <dimen name="list_row_height">62.4dp</dimen>
 
 
     <!-- Poem details Activity-->

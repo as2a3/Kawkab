@@ -46,6 +46,11 @@ public class PoemDetailsActivity extends AppCompatActivity{
         homes = commonService.getPoemHomes(poem.getId());
         settings = commonService.getSettings();
 
+        if (poem.getAuthor().getId() == 1) {
+            findViewById(R.id.scrollView).setBackgroundResource(R.drawable.ali_background);
+        } else {
+            findViewById(R.id.scrollView).setBackgroundResource(R.drawable.nassima_background);
+        }
 
         SpannableString ss1;
         if (settings.getLanguage() == 0) {
@@ -61,7 +66,7 @@ public class PoemDetailsActivity extends AppCompatActivity{
             ss1=  new SpannableString(poemDescription);
             ss1.setSpan(new RelativeSizeSpan(2f), 0,poem.getTitleAr().length(), 0); // set size
         } else {
-            poemDescription = poem.getTitleAr() + "\n";
+            poemDescription = poem.getTitleSp() + "\n";
 
             for (int i = 0; i < homes.size(); i++) {
                 poemDescription += homes.get(i).getDescriptionSp() + "\n";

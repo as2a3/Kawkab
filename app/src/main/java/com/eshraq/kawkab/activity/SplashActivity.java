@@ -17,12 +17,9 @@ import com.j256.ormlite.dao.Dao;
 import java.sql.SQLException;
 import java.util.Calendar;
 
-/**
- * Created by ayman.salah on 2/16/15.
- */
 public class SplashActivity extends FragmentActivity implements Runnable {
 
-    private static final long SPLASH_WAITING_MILLIS = 1500;
+    private static final long SPLASH_WAITING_MILLIS = 3000;
 
     private Settings settings;
     private Dao<Settings, Integer> settingsDao;

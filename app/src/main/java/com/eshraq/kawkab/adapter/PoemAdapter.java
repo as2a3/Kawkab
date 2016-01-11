@@ -48,7 +48,9 @@ public class PoemAdapter extends ArrayAdapter{
             titleTextView.setText(poems.get(position).getTitleSp());
         }
 
-
+        if (position == poems.size() -1) {
+            view.findViewById(R.id.lastPadding).setVisibility(View.VISIBLE);
+        }
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override

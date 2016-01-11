@@ -5,16 +5,19 @@
 
 
     <!-- Poem List-->
-    <dimen name="list_row_height">72dp</dimen>
+    <dimen name="list_row_height">48dp</dimen>
 
 
     <!-- Poem details Activity-->
     <dimen name="title_text_view_height">72dp</dimen>
 
 
+    <dimen name="info_top_padding">100dp</dimen>
+
     <!-- comm -->
     <dimen name="comm_padding_small">4dp</dimen>
     <dimen name="comm_padding_medium">8dp</dimen>
+    <dimen name="comm_padding_big">16dp</dimen>
 
     <dimen name="comm_title_size">18sp</dimen>
     <dimen name="comm_text_size">14sp</dimen>

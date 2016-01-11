@@ -4,4 +4,10 @@
 
     <string name="app_title">رجل وامرأته وكوكب</string>
 
+    <string name="ali_title">علي الدمشاوي</string>
+    <string name="naseema_title">نسيمة بو صلاح</string>
+
+    <string name="imaginit_url">www.imagineit.com</string>
+    <string name="todos_url">sales@todosnas.org</string>
+
 </resources>
